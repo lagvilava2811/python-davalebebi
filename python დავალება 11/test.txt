@@ -1,0 +1,5 @@
+file = open("test.txt", "w")
+file.write("Hello world\n")
+file.write("This is a test file\n")
+file.write("Python is fun\n")
+file.close()

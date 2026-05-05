@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Reactive Nexus</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <canvas id="canvas3d"></canvas>
+        
+        <div id="overlay">
+            <div class="glass-panel">
+                <h1>REACTIVE NEXUS</h1>
+                <p>ეს არის ინტერაქტიული 3D სივრცე, რომელიც რეაგირებს თქვენს ხმასა და მოძრაობაზე.</p>
+                <button id="startBtn">დაწყება</button>
+                <div class="instructions">
+                    <span>🎤 ხმა აკონტროლებს ბირთვს</span>
+                    <span>📷 ხელით მართავთ სურათების კარუსელს</span>
+                    <span>🤚 მოძრაობა აკონტროლებს კამერას</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="status-bar" class="hidden">
+            <div class="status-item">Audio: <span id="audio-status">OFF</span></div>
+            <div class="status-item">Motion: <span id="motion-status">OFF</span></div>
+        </div>
+
+        <video id="webcam" autoplay playsinline muted class="hidden"></video>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
